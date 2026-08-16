@@ -1,0 +1,11 @@
+# Local tasks created by the application
+tasks.txt
+
+# Python cache files
+__pycache__/
+
+# Secret environment variables
+.env
+
+# Local VS Code settings
+.vscode/
