@@ -14,6 +14,13 @@ A simple command-line To-Do List application built with Python.
 - Git
 - GitHub
 
+## Features
+
+- Add tasks
+- View saved tasks
+- Mark tasks as completed
+- Store tasks locally
+
 ## How to Run
 
 ```bash
