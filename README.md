@@ -13,3 +13,9 @@ A simple command-line To-Do List application built with Python.
 - Python
 - Git
 - GitHub
+
+## How to Run
+
+```bash
+python app.py
+```
