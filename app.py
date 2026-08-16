@@ -36,6 +36,27 @@ def add_task(tasks):
         print("Task cannot be empty.")
 
 
+def complete_task(tasks):
+    show_tasks(tasks)
+
+    if not tasks:
+        return
+
+    try:
+        task_number = int(input("\nEnter task number to complete: "))
+        selected_task = tasks[task_number - 1]
+
+        if selected_task.startswith("[Done]"):
+            print("This task is already completed.")
+        else:
+            tasks[task_number - 1] = f"[Done] {selected_task}"
+            save_tasks(tasks)
+            print("Task marked as completed.")
+
+    except (ValueError, IndexError):
+        print("Please enter a valid task number.")
+
+
 def main():
     tasks = load_tasks()
 
@@ -43,7 +64,8 @@ def main():
         print("\n--- Python To-Do List ---")
         print("1. View tasks")
         print("2. Add task")
-        print("3. Exit")
+        print("3. Mark task as completed")
+        print("4. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -52,6 +74,8 @@ def main():
         elif choice == "2":
             add_task(tasks)
         elif choice == "3":
+            complete_task(tasks)
+        elif choice == "4":
             print("Goodbye!")
             break
         else:
