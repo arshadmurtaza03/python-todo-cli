@@ -2,9 +2,26 @@
 
 A beginner-friendly command-line To-Do List application built with Python. This repository is the practical project used in my **Git and GitHub** video assignment.
 
-The project demonstrates how to create a local Git repository, track code changes, create meaningful commits, use `.gitignore`, publish code to GitHub, work with a feature branch, and merge changes using a Pull Request.
+## Video submission
 
-> **Video walkthrough:** The public/unlisted video explanation is submitted in the course task's **Video** field.
+🎥 **Watch the Git and GitHub tutorial:**
+
+https://www.youtube.com/watch?v=Hf-8-pKVPg0
+
+The video explains the difference between Git and GitHub and demonstrates the complete workflow using this repository: local project setup, commits, `.gitignore`, GitHub remote connection, push, branches, Pull Requests, pull, and clone.
+
+> **Verification:** The same video URL is also stored in [`VIDEO_LINK.txt`](VIDEO_LINK.txt) as a source-controlled submission artifact for repository review.
+
+## Assignment coverage
+
+| Assignment requirement | Evidence in this repository and video |
+|---|---|
+| Create a video on Git and GitHub | Video URL above and `VIDEO_LINK.txt` provide a verifiable video submission artifact. |
+| Explain Git versus GitHub | The video and the concepts table below distinguish local version control from online hosting and collaboration. |
+| Explain how Git and GitHub are used | The Python To-Do CLI demonstrates an end-to-end local-to-GitHub workflow. |
+| Discuss at least ten commands | The video and command table demonstrate 15 essential Git and GitHub command uses. |
+
+The project demonstrates how to create a local Git repository, track code changes, create meaningful commits, use `.gitignore`, publish code to GitHub, work with a feature branch, and merge changes using a Pull Request.
 
 ## Project features
 
@@ -26,10 +43,11 @@ The project demonstrates how to create a local Git repository, track code change
 
 ```text
 python-todo-cli/
-├── app.py         # Command-line To-Do List application
-├── README.md      # Project documentation
-├── .gitignore     # Files and folders Git should ignore
-└── tasks.txt      # Created while the app runs; intentionally not tracked
+├── app.py          # Command-line To-Do List application
+├── README.md       # Project documentation and assignment evidence
+├── VIDEO_LINK.txt  # Verifiable YouTube video submission URL
+├── .gitignore      # Files and folders Git should ignore
+└── tasks.txt       # Created while the app runs; intentionally not tracked
 ```
 
 ## Run locally
@@ -88,13 +106,13 @@ This project and its video demonstrate the following essential Git and GitHub co
 | `git log --oneline` | Viewed a concise commit history. |
 | `git diff` | Reviewed code and documentation changes before committing. |
 | `git branch -M main` | Set the primary branch name to `main`. |
-| `git remote add origin <repository-url>` | Connected the local repository to GitHub. |
+| `git remote add origin repository-url` | Connected the local repository to GitHub. |
 | `git push -u origin main` | Published the local `main` branch to GitHub. |
 | `git switch -c add-complete-task-feature` | Created and switched to a feature branch. |
 | `git push -u origin add-complete-task-feature` | Published the feature branch to GitHub. |
 | `git switch main` | Returned to the main branch. |
 | `git pull origin main` | Downloaded merged changes from GitHub. |
-| `git clone <repository-url>` | Downloaded a complete existing GitHub repository locally. |
+| `git clone repository-url` | Downloaded a complete existing GitHub repository locally. |
 
 ## Practical workflow followed
 
@@ -133,6 +151,13 @@ The repository history shows a real incremental workflow rather than a single up
 - `docs: add run instructions`
 - `feat: add task completion option`
 - Merged Pull Request: `#1 feat: add task completion option`
+
+## Assessment evidence
+
+- **Video evidence:** `VIDEO_LINK.txt` contains the exact YouTube URL for the required explanation video.
+- **Code evidence:** `app.py` is the practical Python project demonstrated in the video.
+- **Documentation evidence:** This README explains the Git versus GitHub concepts, practical workflow, and 15 command uses.
+- **Collaboration evidence:** Commit history includes a feature branch and a merged Pull Request.
 
 ## Learning outcomes
 

@@ -1,0 +1,15 @@
+Git and GitHub Video Submission
+
+Public/Unlisted YouTube video URL:
+https://www.youtube.com/watch?v=Hf-8-pKVPg0
+
+This video explains:
+- The difference between Git and GitHub
+- A practical Git and GitHub workflow using this Python To-Do CLI project
+- More than ten essential Git and GitHub commands
+- Branching, Pull Requests, pulling updates, and cloning a repository
+
+Repository:
+https://github.com/arshadmurtaza03/python-todo-cli
+
+Author: Arshad Murtaza
